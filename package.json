@@ -7,7 +7,7 @@
 	"license": "Apache-2.0",
     "scripts": {
         "start":"node func.js" ,
-        "start:dapr": "ls -l /tmp & ls -l /tmp/greetings & /function/daprd --app-id daprized-function --dapr-http-port $DAPR_HTTP_PORT --components-path ./components/  npm run start"
+        "start:dapr": "/function/daprd --app-id daprized-function --dapr-http-port $DAPR_HTTP_PORT --components-path ./components/  npm run start"
     },
 	"dependencies": {
 		"@fnproject/fdk": ">=0.0.11"
