@@ -1,0 +1,10 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: fruits.graphql
+spec:
+  type: bindings.graphql
+  version: v1
+  metadata:
+    - name: endpoint
+      value:  https://fruits-api.netlify.app/graphql
